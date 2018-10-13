@@ -3,7 +3,7 @@ Repo with problems of competitive programming and their solutions.
 
 All solutions found here are of my own and are in no way the only solutions possible.
 Constantly updating repo with new problems.
-Any questions and/or corrections and are well received.
+Any questions and/or corrections are well received.
 
 /////ESPAÑOL
 
