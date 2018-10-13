@@ -1,4 +1,4 @@
-# Comptetitive-Programming-c++
+# Competitive-Programming-c++
 Repo with problems of competitive programming and their solutions.
 
 All solutions found here are of my own and are in no way the only solutions possible.
