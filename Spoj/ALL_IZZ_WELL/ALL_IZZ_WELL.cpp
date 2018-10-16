@@ -39,11 +39,11 @@ bool Backtracking(vector< vector<char> > M, int posF, int posC, vector<char> P, 
 	vector< vector<int> > V;
 	V=hallado(posF, posC, M, buscar, fila, columna);
 	if(pos==9 && !V.empty()){ 
-		cout<<"YES";
+		cout<<"YES"<<endl;
 		//return true
 	}
 	else if(V.empty()){ 
-		cout<<"NO";
+		cout<<"NO"<<endl;
 		return false;
 	}
 	else{
@@ -67,6 +67,7 @@ int main(){
 		cin>>fila;
 		cin>>columna;
 		vector< vector<char> > M(fila, vector<char> (columna));
+		posF.clear(); posC.clear();
 		for(int j=0; j<fila; j++){ 
 			for(int k=0; k<columna; k++){
 				cin>>letra;
@@ -78,21 +79,21 @@ int main(){
 			}
 		}
 		if((fila*columna)<10){ 
-			cout<<"NO";
+			cout<<"NO"<<endl;
 			continue;
 		}
 		if(!posF.empty()){ 
 			for(int j=0; j<posF.size(); j++){
-				//cout << posF[j] << endl;
-				//cout << posC[j] << endl;
 				bool r=Backtracking(M, posF[j], posC[j], P, 1, fila, columna);	
-				if(r){break;}			
+				if(r){
+					break;
+				}			
 			}
 			
 	
 		}
 		else{
-			cout<<"NO";
+			cout<<"NO"<<endl;
 			continue; 
 		}
 	}
